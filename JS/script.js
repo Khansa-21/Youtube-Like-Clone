@@ -49,8 +49,8 @@ function updateIcons(isDarkMode) {
   };
 
   // Apply updated sources
-  if (icon1) icon1.src = `/vidTube_img/images/${icons.icon1}`;
   if (icon2) icon2.src = `/vidTube_img/images/${icons.icon2}`;
+  if (icon1) icon1.src = `/vidTube_img/images/${icons.icon1}`;
   if (icon3) icon3.src = `/vidTube_img/images/${icons.icon3}`;
   if (icon4) icon4.src = `/vidTube_img/images/${icons.icon4}`;
   if (icon5) icon5.src = `/vidTube_img/images/${icons.icon5}`;

@@ -194,7 +194,7 @@ img {
 /* For mbl devices */
 .sidebar-mb {
   display: block !important;
-  width: 12%;
+  width: fit-content;
   height: 580px;
   position: fixed;
   left: 0;
