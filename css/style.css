@@ -1,0 +1,947 @@
+/* ====================================
+   Global Reset & Variables
+==================================== */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root {
+  --primary-color: #edf2fc;
+  --secondary-color: #3f3f3f;
+  --third-color: #8b8b8b;
+  --fourth-color: #c4c4c4;
+  --fifth-color: #dfdddd;
+}
+.mode {
+  --primary-color: #000106;
+  --secondary-color: #ffffff;
+  --third-color: #8b8b8b;
+  --fourth-color: #3f3f3f;
+  --fifth-color: #3f3f3f;
+}
+
+/* ====================================
+   Body & Typography
+==================================== */
+body {
+  background-color: var(--primary-color);
+  height: 500dvh;
+  width: 100%;
+}
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+
+/* ====================================
+   Navigation Bar
+==================================== */
+nav {
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  background-color: var(--primary-color);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  box-shadow: 0px 0px 3px rgb(130, 130, 131);
+  padding: 10px 2%;
+}
+
+/* ====================================
+   Logo & Navigation Icons
+==================================== */
+
+/* Logo size */
+.logo_nav #logo {
+  width: 100px;
+}
+
+/* Hamburger icon */
+.logo_nav #menu {
+  width: 20px;
+  margin-right: 25px;
+}
+
+/* Apply pointer cursor to all images */
+img {
+  cursor: pointer;
+}
+
+/* Flex container utility class */
+.flex_div {
+  display: flex;
+  align-items: center;
+}
+
+/* ====================================
+   Menu Bar Styling
+==================================== */
+
+/* Menu icons inside bar */
+.menu_bar img {
+  height: 25px;
+  margin-left: 20px;
+}
+
+/* Padding around menu bar */
+.menu_bar {
+  padding: 20px;
+}
+
+/* Microphone icon */
+#mic {
+  height: 25px;
+}
+
+/* ====================================
+   Icons & Profile Picture
+==================================== */
+
+/* General icon sizing */
+.icons {
+  width: 20px;
+  height: 20px;
+}
+
+/* User profile picture */
+#pic {
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+}
+
+/* ====================================
+   Search Bar Styling
+==================================== */
+
+/* Search container */
+.search {
+  width: 580px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 25px;
+}
+
+/* Search field */
+.search-field {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+.search input {
+  width: 100%;
+  height: 39.5px;
+  border: 1px solid var(--secondary-color);
+  outline: none;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding-left: 20px;
+}
+
+/* Placeholder text in input */
+.search input::placeholder {
+  color: var(--third-color);
+  font-size: 14px;
+}
+
+/* Border color when input is focused */
+.search input:focus {
+  border: 1px solid blue;
+}
+
+/* Search button (with icon) */
+#search_i {
+  width: 70px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 25px 25px 0px;
+  border: 1px solid var(--third-color);
+  background-color: var(--fifth-color);
+  transform: translateX(-4.7px); /* aligns button with input */
+}
+
+/* ====================================
+   Sidebar Container
+==================================== */
+.sidebar {
+  width: 18%;
+  height: 580px;
+  position: fixed;
+  left: 0;
+  padding-left: 10px;
+  background-color: var(--primary-color);
+  overflow: hidden;
+  scrollbar-width: thin; /* For Firefox */
+  transition: width 3s ease-in-out;
+  z-index: 10;
+}
+
+/* For mbl devices */
+.sidebar-mb {
+  display: block !important;
+  width: 12%;
+  height: 580px;
+  position: fixed;
+  left: 0;
+  padding-left: 10px;
+  background-color: var(--primary-color);
+  overflow: hidden;
+  scrollbar-width: thin; /* For Firefox */
+  transition: width 0.5s ease-in-out;
+  z-index: 2;
+}
+/* Enable scrolling on hover */
+.sidebar:hover {
+  overflow: auto;
+}
+
+/* Scrolling affetcs on mbl tap/touch */
+
+/* for mbl device */
+.hovered {
+  overflow: auto;
+}
+
+/* ====================================
+   Sidebar Links & Tabs
+==================================== */
+
+/* Tab icon size */
+.tab {
+  width: 20px;
+}
+
+/* Main navigation links */
+.link_tabs a {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 205px;
+  height: 40px;
+  margin: 10px 0 5px;
+  padding-left: 15px;
+  border-radius: 10px;
+  color: var(--secondary-color);
+}
+
+/* Hover effect on sidebar links */
+.link_tabs a:hover {
+  background-color: var(--fifth-color);
+  color: rgb(211, 108, 108);
+}
+
+/* Horizontal rule styling inside sidebar */
+.sidebar hr {
+  width: 95%;
+  border: none;
+  border-top: 1px solid var(--third-color);
+}
+
+/* ====================================
+   Subscriptions Section
+==================================== */
+
+.subscribed a {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 200px;
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+/* Subscriber channel icons */
+.subscribed a img {
+  border-radius: 50%;
+}
+
+/* ====================================
+   Headings, Text & Footer
+==================================== */
+
+/* Sidebar section headings */
+h4 {
+  color: var(--secondary-color);
+  font-size: 15px;
+  margin: 25px 0;
+  padding-left: 15px;
+  line-height: 0%;
+}
+
+/* Paragraph spacing (generic use) */
+p {
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+/* Footer links (policies, about, etc.) */
+.policies a {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--third-color);
+}
+
+/* Footer text */
+.footer {
+  font-weight: lighter;
+  color: rgb(192, 191, 191);
+}
+
+/* ==========================================
+   Collapsed Sidebar State (.active)
+========================================== */
+
+/* Shrinks the sidebar to fit content width */
+.active {
+  width: fit-content;
+}
+
+/* Hides all paragraph text inside sidebar links */
+.active a p {
+  display: none;
+}
+
+/* Hides specific sidebar sections */
+.active .policies,
+.active .subscribed,
+.active .personal,
+.active .explored,
+.active .YouTub,
+.active .manage {
+  display: none;
+}
+
+/* Hides headings and horizontal lines */
+.active h4,
+.active hr {
+  display: none;
+}
+
+/* Reduces link area to square (only icon visible) */
+.active .link_tabs a {
+  width: 40px;
+  height: 40px;
+}
+
+/* Main content area on the right side of the screen */
+.main {
+  margin-top: 20px;
+  width: 82%;
+  position: absolute;
+  right: 0;
+  padding: 0px;
+  overflow: hidden;
+  padding-left: 30px;
+}
+
+/* Top banner section */
+.banner {
+  margin-left: 10px;
+  margin-top: 20px;
+  height: 320px;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Left part of banner containing main image */
+.banner .first {
+  width: 70%;
+}
+.banner .first img {
+  height: 300px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Right part of banner showing brand info and button */
+.banner .xiaomi {
+  width: 30%;
+  margin-top: 30px;
+  line-height: 23px;
+  padding-left: 20px;
+}
+
+/* Xiaomi brand logo */
+#xiaomi_logo {
+  border-radius: 15px;
+  width: 45px;
+  margin-bottom: 22px;
+}
+
+/* brand name */
+#xia {
+  font-size: 16px;
+  color: var(--secondary-color);
+}
+
+/* Sub text / details */
+#xiao {
+  font-size: 12px;
+  color: var(--third-color);
+}
+#xi {
+  font-size: 12px;
+  color: var(--secondary-color);
+  font-weight: bolder;
+}
+
+/* action button */
+.butn {
+  margin-top: 10px;
+  border-radius: 25px;
+  border: none;
+  padding: 5px;
+  width: 90px;
+  height: 35px;
+  background-color: blue;
+  color: white;
+}
+
+/* Enlarged banner adjustments */
+.enlarge .banner {
+  height: 350px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Wrapper for enlarged layout sections */
+.enlarge {
+  width: 95%;
+  margin: 5px;
+}
+
+/* Adjusted image height inside enlarged banner */
+.enlarge .first img {
+  height: 350px;
+}
+
+/* Enlarged video thumbnail size */
+.enlarge #video {
+  width: 290px;
+  height: 180px;
+}
+
+/* Limit width of video description text */
+.enlarge .open p {
+  width: 210px;
+}
+
+/* (3-dot menu) left margin */
+#dot {
+  margin-left: 5px;
+}
+
+/* Main video grid layout: 4 columns */
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 16px;
+  grid-row-gap: 30px;
+  margin-top: 10px;
+  margin-left: 8px;
+}
+
+/* Override grid margin inside enlarged layout */
+.enlarge .content {
+  margin-left: 20px;
+  /* margin-top: 0%; */
+}
+
+/* Video thumbnail styling */
+#video {
+  width: 250px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+/* Container for each video block */
+.video {
+  width: 200px;
+  margin-bottom: 8px;
+}
+
+/* Flex layout for video details (thumbnail + text) */
+.open {
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Video title/description styling */
+.open p {
+  font-size: 13px;
+  line-height: 17px;
+  word-spacing: 1px;
+  width: 175px;
+  color: var(--secondary-color);
+}
+
+/* Profile or channel image */
+.open img {
+  width: 25px;
+  border-radius: 50%;
+}
+
+/* Color override for specific text spans */
+#small {
+  color: var(--third-color);
+  font-size: 12px;
+  line-height: 15px;
+  word-spacing: 1px;
+  margin-left: 18px;
+}
+
+/* Dots menu icon */
+#three {
+  width: 20px;
+}
+
+/* Horizontal options bar container */
+.main .options {
+  min-width: 80%;
+  position: relative;
+  top: 0;
+  z-index: 9;
+  overflow: auto;
+  scroll-behavior: smooth;
+  margin-left: 10px;
+}
+
+/* Hide scrollbar in WebKit browsers */
+.main .options::-webkit-scrollbar {
+  display: none;
+}
+
+/* Styling for each option link */
+.options div a {
+  background-color: var(--fourth-color);
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 5px;
+  user-select: none;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+/* Left/right scroll arrow container */
+.signs {
+  width: 6rem;
+  top: 0;
+  border-radius: 5px;
+  /* Optional positioning and flex styles */
+  /* position: absolute;   
+     display: none;
+     align-items: center;
+     justify-content: flex-end; */
+}
+
+/* Left gradient background (fade effect) */
+.signs:first-child {
+  left: 0;
+  background: linear-gradient(to right, var(--fourth-color) 45%, transparent);
+}
+
+/* Right gradient background (fade effect) */
+.signs:last-child {
+  right: 0;
+  background: linear-gradient(to left, var(--fourth-color) 45%, transparent);
+}
+
+/* Left/Right arrow icons */
+#sign {
+  width: 2.4rem;
+  background-color: var(--primary-color) transparent;
+  text-align: center;
+  /* font: 200 2rem/ 2.4rem ; */
+}
+
+/* Hover effect for arrows */
+#sign:hover {
+  background-color: var(--fourth-color) transparent;
+  border-radius: 50%;
+}
+
+/* Hover and active effects for category links */
+.options a:hover,
+.options a:active {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* Heading for Shorts section */
+.heading {
+  font-weight: bolder;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+/* Grid layout for Shorts videos */
+.shorts {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0%;
+}
+
+/* Container for each short video */
+.shorts-container {
+  width: 90%;
+  margin: 0%;
+  padding: 0%;
+}
+
+/* Show more bar at the bottom */
+.showbar {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Horizontal line in showbar */
+.showbar hr {
+  width: 50%;
+  background-color: var(--fifth-color);
+  margin: 0%;
+}
+
+/* "Show more" button styling */
+#show_btn {
+  width: 490px;
+  height: 37px;
+  border-radius: 20px;
+  border: 1px solid var(--third-color);
+  background-color: transparent;
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0%;
+}
+
+/* Hover effect for "Show more" button */
+#show_btn:hover {
+  background-color: var(--fifth-color);
+}
+
+/* Default video styling inside shorts */
+video {
+  width: 100%;
+  height: 380px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Text description under each short */
+.short {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* View count styling */
+.short span {
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--third-color);
+  margin-left: 18px;
+}
+
+/* Enlarged Shorts styles (if .start class is added) */
+.start #short {
+  width: 100%;
+  height: 430px;
+}
+.start .short {
+  width: 220px;
+}
+
+/* ----------------------
+Next page styling
+---------------------- */
+
+/* Main Container styling */
+.main_container {
+  padding: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: var(--secondary-color);
+}
+.left-col {
+  flex-basis: 69%;
+}
+.left-col video {
+  height: 450px;
+}
+.tags a {
+  font-size: 13px;
+  color: blue;
+}
+.info {
+  margin-top: 10px;
+}
+.bell,
+.like,
+.share,
+.download,
+.description {
+  padding: 5px;
+  border-radius: 20px;
+  background-color: var(--fifth-color);
+  color: var(--secondary-color);
+}
+.bell {
+  margin-left: 20px;
+  cursor: pointer;
+}
+.like {
+  margin-left: 120px;
+}
+.share {
+  margin-left: 20px;
+  width: 90px;
+}
+.download {
+  margin-left: 20px;
+  width: 120px;
+}
+.description {
+  margin-top: 20px;
+  line-height: 20px;
+}
+.comments {
+  margin-top: 20px;
+  width: 300px;
+}
+#comment {
+  width: 100%;
+  background-color: var(--primary-color);
+  outline: none;
+  border: none;
+  margin-left: 5px;
+  color: var(--secondary-color);
+  padding-left: 10px;
+}
+.comments p {
+  font-weight: bold;
+}
+.right-col {
+  flex-basis: 30%;
+  margin-left: 20px;
+}
+.suggestion {
+  margin-bottom: 10px;
+  align-items: flex-start;
+}
+.video-info {
+  width: 250px;
+  margin-top: 10px;
+}
+
+/* Responsive design for screens smaller than or equal to 700px */
+@media (max-width: 600px) {
+  /* Hide elements that are not needed on small screens */
+  .sidebar,
+  #more,
+  #notification,
+  .options,
+  .banner,
+  #mic,
+  .comment-section {
+    display: none;
+  }
+
+  /* Adjust menu and logo in navigation bar */
+  .logo_nav #menu {
+    margin-right: 12px;
+  }
+
+  .logo_nav #logo {
+    width: 70px;
+    margin-right: 20px;
+  }
+
+  /* Resize search bar and its input */
+  .search {
+    width: 100px;
+    height: 30px;
+  }
+
+  .search input {
+    height: 29px;
+    padding-left: 5px;
+  }
+
+  /* Style the search icon/button */
+  #search_i {
+    height: 29px;
+    width: 25px;
+    padding: 2px;
+  }
+
+  /* Reset margins and padding in the menu bar */
+  .menu_bar {
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu_bar img {
+    margin-left: 10px;
+  }
+
+  /* Sidebar still takes minimal width if used */
+  .sidebar {
+    width: fit-content;
+  }
+
+  /* Set main and video containers to full width */
+  .main,
+  .video,
+  .video-info,
+  .left-col {
+    width: 100%;
+  }
+
+  /* Remove left margin for content on small screens */
+  .content {
+    margin-left: 0px;
+  }
+
+  /* Specific video element dimensions */
+  #video {
+    width: 300px;
+    height: 190px;
+  }
+
+  /* Adjust paragraph width inside open class */
+  .open p {
+    width: 230px;
+  }
+
+  /* Shorts grid becomes 2 columns on smaller screens */
+  .shorts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Set individual short video width */
+  .short {
+    width: 150px;
+  }
+
+  /* Adjust general video element appearance */
+  video {
+    height: 300px;
+    margin-top: 10px;
+  }
+
+  /* Next page */
+  .main_container {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .suggestion {
+    flex-direction: column;
+  }
+  .suggestion #video {
+    width: 100%;
+    height: 250px;
+  }
+  .left-col video {
+    height: 220px;
+    width: 100%;
+  }
+  .right-col {
+    margin-left: 0;
+    margin-top: 20px;
+    flex-basis: 100%;
+  }
+  .info {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .like {
+    margin-left: 10px;
+  }
+}
+
+/* Tablet responsiveness */
+@media (min-width: 601px) and (max-width: 900px) {
+  .sidebar,
+  #more,
+  #notification,
+  .options,
+  .xiaomi,
+  #mic,
+  .comment-section {
+    display: none;
+  }
+  .logo_nav #logo {
+    width: 80px;
+    margin-right: 20px;
+  }
+  .search {
+    width: 300px;
+    height: 30px;
+  }
+  .sidebar {
+    width: fit-content;
+  }
+  .main,
+  .banner .first,
+  .video {
+    width: 100%;
+  }
+  .first {
+    margin-right: 10px;
+  }
+  #video {
+    width: 310px;
+    height: 200px;
+  }
+  .open p {
+    width: 230px;
+  }
+  .shorts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .main_container {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .left-col,
+  .right-col {
+    flex-basis: 100%;
+  }
+  .suggestion {
+    margin-top: 20px;
+  }
+  .suggestion #video {
+    width: 330px;
+    height: 200px;
+  }
+  .video-info {
+    width: 330px;
+  }
+}

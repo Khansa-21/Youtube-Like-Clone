@@ -3,232 +3,437 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./STYLE/stle.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Stream</title>
   </head>
-  <body>
+  <body style="transition: background-color 0.3s ease">
+    <!-- Navigation Bar -->
     <nav class="flex_div">
+      <!-- Logo and Menu Icon -->
       <div class="logo_nav flex_div">
-      <div id="menu_icon">  <img id="menu" src="./vidTube_img/images/menu.png" alt="" /> </div>
-      <div>  <img id="logo" src="./vidTube_img/images/logo.png" alt="" title="Home"/> </div>
-      </div> &nbsp;
+        <div id="menu_icon">
+          <img id="menu" src="/vidTube_img/images/menu.png" alt="Menu-icon" />
+        </div>
+        <div>
+          <img
+            id="logo"
+            src="/vidTube_img/images/logo.png"
+            alt="Home-icon"
+            title="Home"
+          />
+        </div>
+      </div>
+      &nbsp;
+
+      <!-- Search Bar -->
       <div class="search_bar flex_div">
         <div class="search">
-          <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+          <div class="flex_div search-field">
             <input type="text" placeholder="Search" />
           </div>
           &nbsp;
           <div id="search_i">
-            <img src="./vidTube_img/images/search.png" id="search" alt="" title="Search" />
+            <img
+              src="/vidTube_img/images/search.png"
+              id="search"
+              alt="Search-icon"
+              title="Search"
+              class="icons"
+            />
           </div>
         </div>
-        &nbsp; &nbsp;
-        <img id="mic" src="./vidTube_img/images/voice-search.png" alt="" title="Search with your voice" />
+        &nbsp;&nbsp;
+        <img
+          id="mic"
+          src="/vidTube_img/images/voice-search.png"
+          alt="Mic-icon"
+          title="Search with your voice"
+        />
       </div>
+
+      <!-- Menu Icons -->
       <div class="menu_bar flex_div">
-        <img src="./vidTube_img/images/upload.png" alt=""  class="icons"/>&nbsp;&nbsp;&nbsp;&nbsp;
-        <img id="more" src="./vidTube_img/images/more.png" alt="" class="icons" />&nbsp;&nbsp;&nbsp;&nbsp;
+        <img
+          src="/vidTube_img/images/upload.png"
+          alt="Upload-icon"
+          class="icons"
+        />
+        <img
+          id="more"
+          src="/vidTube_img/images/more.png"
+          alt="More-icon"
+          class="icons"
+        />
         <img
           id="notification"
-          src="./vidTube_img/images/notification.png"
-          alt="" title="Notifications"
-        />&nbsp;&nbsp;&nbsp;&nbsp;
-        <img id="icon1" src="./vidTube_img/images/moon.png" alt=""  class="icons"/>&nbsp;&nbsp;&nbsp;&nbsp;
-        <img id="pic" src="./vidTube_img/images/megan.png" alt="" class="icons" />
+          src="/vidTube_img/images/notification.png"
+          alt="Notification-icon"
+          title="Notifications"
+        />
+        <img
+          id="icon1"
+          src="/vidTube_img/images/moon.png"
+          alt="Moon-icon"
+          class="icons"
+        />
+        <img
+          id="pic"
+          src="/vidTube_img/images/megan.png"
+          alt="User-icon-img"
+          class="icons"
+        />
       </div>
     </nav>
+
+    <!-- Sidebar Section Start -->
     <div class="sidebar">
       <div class="link_tabs">
+        <!-- Main Links -->
         <div class="links">
-          <a href="#" style="margin-top: 20px;">
-            <img src="./vidTube_img/images/home.png" alt="" class="show_tab" id="tab" />
-            <p style="color: rgb(211, 108, 108);">Home</p></a
-          >
+          <a href="#" style="margin-top: 20px">
+            <img
+              src="./vidTube_img/images/home.png"
+              alt="Home-icon"
+              class="show_tab tab"
+            />
+            <p style="color: rgb(211, 108, 108)">Home</p>
+          </a>
         </div>
         <div>
           <a href="#">
-            <img src="./vidTube_img/images/explore.png" alt="" class="show_tab" id="tab" />
-            <p>Shorts</p></a
-          >
+            <img
+              src="./vidTube_img/images/short-video.png"
+              alt="Shorts-icon"
+              class="show_tab tab"
+              id="V-shorts"
+            />
+            <p>Shorts</p>
+          </a>
         </div>
         <div>
           <a href="#">
-            <img src="./vidTube_img/images/subscriprion.png" alt="" class="show_tab" id="tab" />
-            <p>Subcriptions</p></a
-          >
+            <img
+              src="./vidTube_img/images/subscribe.png"
+              alt="Subscription-icon"
+              class="show_tab tab"
+              id="subscription"
+            />
+            <p>Subscriptions</p>
+          </a>
         </div>
+
         <div><hr /></div>
+
+        <!-- Personal Section -->
         <div><h4>YOU &nbsp; &gt;</h4></div>
         <div class="personal">
           <a href="#">
-            <img src="./vidTube_img/images/history.png" alt="" id="tab" />
-            <p>History</p></a
-          >
+            <img
+              src="./vidTube_img/images/history.png"
+              alt="History-icon"
+              class="tab"
+              id="history"
+            />
+            <p>History</p>
+          </a>
         </div>
         <div>
           <a href="#">
-            <img src="./vidTube_img/images/playlist.png" alt="" id="tab" />
-            <p>Playlist</p></a
-          >
+            <img
+              src="./vidTube_img/images/playlist.png"
+              alt="Playlist-icon"
+              class="tab"
+              id="playlist"
+            />
+            <p>Playlist</p>
+          </a>
         </div>
         <div>
           <a href="#">
-            <img src="./vidTube_img/images/library.png" alt="" id="tab" />
-            <p>Library</p></a
-          >
+            <img
+              src="./vidTube_img/images/music-library.png"
+              alt="Library-icon"
+              class="tab"
+              id="library"
+            />
+            <p>Library</p>
+          </a>
         </div>
         <div>
           <a href="#">
-            <img src="./vidTube_img/images/cast.png" alt="" id="tab" />
-            <p>Cast Videos</p></a
-          >
+            <img
+              src="./vidTube_img/images/google-cast-logo.png"
+              alt="Cast-icon"
+              class="tab"
+              id="cast"
+            />
+            <p>Cast Videos</p>
+          </a>
         </div>
+
         <div><hr /></div>
+
+        <!-- Subscriptions -->
         <div class="subscribed">
           <div><h4>Subscriptions</h4></div>
           <div>
-            <a href=""
-              ><img src="./vidTube_img/images/Jack.png" alt="" id="tab" />
-              <p>JACK</p></a
-            >
+            <a href="#">
+              <img
+                src="./vidTube_img/images/Jack.png"
+                alt="Subscribed-icon"
+                class="tab"
+              />
+              <p>JACK</p>
+            </a>
           </div>
           <div>
-            <a href=""
-              ><img src="./vidTube_img/images/simon.png" alt="" id="tab" />
-              <p>SIMON</p></a
-            >
+            <a href="#">
+              <img
+                src="./vidTube_img/images/simon.png"
+                alt="Subscribed-icon"
+                class="tab"
+              />
+              <p>SIMON</p>
+            </a>
           </div>
           <div>
-            <a href=""
-              ><img src="./vidTube_img/images/megan.png" alt="" id="tab" />
-              <p>MEGAN</p></a
-            >
+            <a href="#">
+              <img
+                src="./vidTube_img/images/megan.png"
+                alt="Subscribed-icon"
+                class="tab"
+              />
+              <p>MEGAN</p>
+            </a>
           </div>
           <div>
-            <a href=""
-              ><img src="./vidTube_img/images/cameron.png" alt="" id="tab"/>
-              <p>CAMERON</p></a
-            >
+            <a href="#">
+              <img
+                src="./vidTube_img/images/cameron.png"
+                alt="Subscribed-icon"
+                class="tab"
+              />
+              <p>CAMERON</p>
+            </a>
           </div>
           <div>
-            <a href=""
-              ><img src="./vidTube_img/images/tom.png" alt="" id="tab" />
-              <p>TOM HARDY</p></a
-            >
+            <a href="#">
+              <img
+                src="./vidTube_img/images/tom.png"
+                alt="Subscribed-icon"
+                class="tab"
+              />
+              <p>TOM HARDY</p>
+            </a>
           </div>
           <div>
-            <a href=""
-              ><img src="./vidTube_img/images/list (2).png" style="border-radius: 0%;" id="all" alt="" id="tab" />
-              <p>All subscriptions</p></a
-            >
+            <a href="#">
+              <img
+                src="./vidTube_img/images/list (2).png"
+                style="border-radius: 0%"
+                id="all"
+                alt="List-icon"
+                class="tab"
+              />
+              <p>All subscriptions</p>
+            </a>
           </div>
-      <div><hr /></div>
+          <div><hr /></div>
         </div>
-      <div class="explored">
-      <div><h4>Explore</h4></div>
-      <div>
-        <a href="#">
-          <img src="./vidTube_img/images/explore.png" alt=""id="tab" />
-          <p>Trending</p></a
-        >
-      </div>
-      <div>
-        <a href="#">
-          <img src="./vidTube_img/images/musical-note.png" alt="" id="music" id="tab" />
-          <p>Music</p></a
-        >
-      </div>
-      <div>
-        <a href="#">
-          <img src="./vidTube_img/images/game.png" alt="" id="game" id="tab" />
-          <p>Gaming</p></a
-        >
-      </div><div>
-        <a href="#">
-          <img src="./vidTube_img/images/newspaper-folded.png" alt="" id="news" id="tab" />
-          <p>News</p></a
-        >
-      </div>
-      <div>
-        <a href="#">
-          <img src="./vidTube_img/images/trophy.png" alt="" id="sport" id="tab" />
-          <p>Sports</p></a
-        >
-      </div>
-        <div>
-          <a href="#">
-            <img src="./vidTube_img/images/messages.png" alt="" id="tab" />
-            <p>Messages</p></a
-          >
+
+        <!-- Explore Section -->
+        <div class="explored">
+          <div><h4>Explore</h4></div>
+          <div>
+            <a href="#">
+              <img
+                src="./vidTube_img/images/explore.png"
+                alt="Explore-icon"
+                class="tab"
+              />
+              <p>Trending</p>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img
+                src="./vidTube_img/images/musical-note.png"
+                alt="Music-icon"
+                id="music"
+                class="tab"
+              />
+              <p>Music</p>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img
+                src="./vidTube_img/images/game.png"
+                alt="Game-icon"
+                id="game"
+                class="tab"
+              />
+              <p>Gaming</p>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img
+                src="./vidTube_img/images/newspaper-folded.png"
+                alt="Newspaper-icon"
+                id="news"
+                class="tab"
+              />
+              <p>News</p>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img
+                src="./vidTube_img/images/trophy.png"
+                alt="Sport-icon"
+                id="sport"
+                class="tab"
+              />
+              <p>Sports</p>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img
+                src="./vidTube_img/images/comment.png"
+                alt="Msg-icon"
+                class="tab"
+                id="msg"
+              />
+              <p>Messages</p>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img
+                src="./vidTube_img/images/show-more.png"
+                alt="Show-more-icon"
+                class="tab"
+              />
+              <p>Show More</p>
+            </a>
+          </div>
+          <div><hr /></div>
         </div>
-        <div>
-          <a href="">
-            <img src="./vidTube_img/images/show-more.png" alt="" id="tab" />
-            <p>Show More</p></a
-          >
+
+        <!-- More from YouTube -->
+        <div class="YouTub">
+          <div><h4>More from YouTube</h4></div>
+          <div>
+            <a href="#">
+              <img
+                src="./vidTube_img/images/youtube.png"
+                alt="Youtube-icon"
+                class="tab"
+              />
+              <p>YouTube Premium</p>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img
+                src="./vidTube_img/images/youtube music.png"
+                alt="Yt-music-icon"
+                class="tab"
+              />
+              <p>YouTube Music</p>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img
+                src="./vidTube_img/images/play.png"
+                alt="Yt-kids-icon"
+                class="tab"
+              />
+              <p>YouTube Kids</p>
+            </a>
+          </div>
+          <div><hr /></div>
         </div>
-      <div><hr /></div>
-    </div>
-    <div class="YouTub">
-      <div><h4>More from YouTube</h4></div>
-      <div>
-        <a href="">
-          <img src="./vidTube_img/images/youtube.png" alt="" id="tab" />
-          <p>YouTube Premium</p></a
-        >
-      </div><div>
-        <a href="">
-          <img src="./vidTube_img/images/youtube music.png" alt="" id="tab" />
-          <p>YouTube Music</p></a
-        >
+
+        <!-- Settings and Help -->
+        <div class="manage">
+          <div style="margin-top: 20px">
+            <a href="#">
+              <img
+                src="./vidTube_img/images/setting.png"
+                alt="Setting-icon"
+                id="setting"
+                class="tab"
+              />
+              <p>Settings</p>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img
+                src="./vidTube_img/images/report.png"
+                alt="Report-icon"
+                id="report"
+                class="tab"
+              />
+              <p>Report history</p>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img
+                src="./vidTube_img/images/question.png"
+                alt="Help-icon"
+                id="help"
+                class="tab"
+              />
+              <p>Help</p>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img
+                src="./vidTube_img/images/feedback.png"
+                alt="Feedback-icon"
+                id="Send"
+                class="tab"
+              />
+              <p>Send feedback</p>
+            </a>
+          </div>
+          <div><hr /></div>
+        </div>
       </div>
-      <div>
-        <a href="">
-          <img src="./vidTube_img/images/play.png" alt="" id="tab" />
-          <p>YouTube Kids</p></a
+
+      <!-- Footer Links -->
+      <div class="policies" style="margin-top: 20px">
+        <a>About </a> &nbsp;<a href="#">Press</a> &nbsp;<a href="#"
+          >Copyright</a
         >
+        <br />
+        <a>Contact us </a> &nbsp;<a href="#">Creators</a> <br />
+        <a>Advertise </a> &nbsp;<a href="#">Developers</a> <br /><br />
+        <a>Terms </a> &nbsp;<a href="#">Privacy</a> &nbsp;<a>Policy & Safety</a>
+        <br />
+        <a>How YouTube works </a> <br />
+        <a>Test new features </a> <br /><br />
+        <a id="footer">&#169; 2025 Google LLC</a> <br />
       </div>
-      <div><hr /></div>
     </div>
-    <div class="manage">
-      <div style="margin-top: 20px;">
-        <a href="">
-          <img src="./vidTube_img/images/setting.png" alt="" id="setting" id="tab" />
-          <p>Settings</p></a
-        >
-      </div><div>
-        <a href="">
-          <img src="./vidTube_img/images/report.png" alt="" id="report" id="tab" />
-          <p>Report history</p></a
-        >
-      </div><div>
-        <a href="">
-          <img src="./vidTube_img/images/question.png" alt="" id="help" id="tab" />
-          <p>help</p></a
-        >
-      </div>
-      <div>
-        <a href="">
-          <img src="./vidTube_img/images/feedback.png" alt="" id="Send" id="tab" />
-          <p>Send feedback</p></a
-        >
-      </div>
-      <div><hr /></div>
-    </div>
-      </div>
-      <div class="policies" style="margin-top: 20px;">
-      <a>About </a> &nbsp;<a href="">Press</a> &nbsp;<a href="">Copyright</a> <br>
-      <a>Contact us </a> &nbsp;<a href="">Creators</a> <br>
-      <a>Advertise </a> &nbsp;<a href="">Developers</a>  <br><br>
-      <a>Terms </a> &nbsp;<a href="">Privacy</a> &nbsp;<a>Policy & Safety </a> <br>
-      <a>How YouTube works </a> <br>
-      <a>Test new features </a> <br><br>
-      <a id="footer">&#169; 2025 Google LLC </a> <br>
-    </div>
-    </div>
+    <!-- Sidebar Section End -->
+
+    <!-- Main Options Bar Start -->
     <div class="main">
       <div class="options flex_div">
-        <div class="signs"><a href="" id="sign" >&lt;</a></div>
+        <!-- Left Scroll Arrow -->
+        <div class="signs">
+          <a href="#" id="sign">&lt;</a>
+        </div>
+
+        <!-- Filter Buttons -->
         <div id="ist"><a href="#">All</a></div>
         <div><a href="#">Music</a></div>
         <div><a href="#">Laptops</a></div>
@@ -238,496 +443,1092 @@
         <div><a href="#">Indian pop music</a></div>
         <div><a href="#">Feature Phones</a></div>
         <div><a href="#">Feature Phones</a></div>
+        <!-- repeated -->
         <div><a href="#">Feature Phones</a></div>
+        <!-- repeated -->
         <div><a href="#">Feature Phones</a></div>
+        <!-- repeated -->
         <div><a href="#">Feature Phones</a></div>
+        <!-- repeated -->
         <div><a href="#">Graphics processing units</a></div>
-        <div class="signs"><a href="" id="sign" >&gt;</a></div>
+
+        <!-- Right Scroll Arrow -->
+        <div class="signs">
+          <a href="#" id="sign">&gt;</a>
+        </div>
       </div>
+      <!-- Main Options Bar End -->
+
+      <!-- Banner Section Start -->
       <div class="banner">
-        <div class="first"><a href=""
-          ><img src="./vidTube_img/images/Untitled design (1).png" alt=""
-        /></a></div>
+        <!-- Banner Image -->
+        <div class="first">
+          <a href="#">
+            <img src="./vidTube_img/images/Untitled design (1).png" alt="" />
+          </a>
+        </div>
+
+        <!-- Xiaomi Sponsored Content -->
         <div class="xiaomi flex_div">
+          <!-- Xiaomi Logo -->
           <div>
-            <img id="xiaomi_logo" src="./vidTube_img/images/xiaomi.png" alt="">
+            <img
+              id="xiaomi_logo"
+              src="./vidTube_img/images/xiaomi.png"
+              alt="Xiaomi-icon"
+            />
           </div>
+
+          <!-- Xiaomi Text & Button -->
           <div>
-         <div> <b>  <p id="xia">Xiaomi 15 Series</p></b> </div>
-         <div> &nbsp; &nbsp; <b> <span id="xi" >Sponsored</span> </b> &bull;
-            <span id="xiao">Xiaomi Pakistan</span> </div>
-          <div> &nbsp; &nbsp;  <button class="butn"> Book now</button> </div>
+            <div>
+              <b><p id="xia">Xiaomi 15 Series</p></b>
+            </div>
+            <div>
+              &nbsp; &nbsp; <b><span id="xi">Sponsored</span></b> &bull;
+              <span id="xiao">Xiaomi Pakistan</span>
+            </div>
+            <div>&nbsp; &nbsp; <button class="butn">Book now</button></div>
+          </div>
+        </div>
+      </div>
+      <!-- Banner Section End -->
+
+      <!-- Video Block Start -->
+      <div class="content">
+        <div class="video">
+          <!-- Video Thumbnail -->
+          <div>
+            <a href="./routes/play-video.html">
+              <img id="video" src="./vidTube_img/images/thumbnail1.png" />
+            </a>
+          </div>
+
+          <!-- Video Details Section -->
+          <div class="open">
+            <!-- Channel Icon -->
+            <div>
+              <a href="#">
+                <img src="./vidTube_img/images/Jack.png" />
+              </a>
+            </div>
+
+            <!-- Title, Channel Name, Views -->
+            <div>
+              <a href="./routes/play-video.html">
+                <p>
+                  <b
+                    >To be a good developer learn coding with practices and
+                    projects.</b
+                  >
+                </p>
+              </a>
+              <p id="small">Learn Code</p>
+              <span id="small">110K views | 1 year ago</span>
+            </div>
+
+            <!-- Options Icon -->
+            <a href="#">
+              <div id="dot">
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
           </div>
         </div>
 
+        <div class="video">
+          <!-- Video Thumbnail -->
+          <div>
+            <a href="./routes/play-video.html">
+              <img id="video" src="./vidTube_img/images/thumbnail1.png" />
+            </a>
+          </div>
+
+          <!-- Video Details Section -->
+          <div class="open">
+            <!-- Channel Icon -->
+            <div>
+              <a href="#">
+                <img src="./vidTube_img/images/Jack.png" />
+              </a>
+            </div>
+
+            <!-- Title, Channel Name, Views -->
+            <div>
+              <a href="./routes/play-video.html">
+                <p>
+                  <b
+                    >To be a good developer learn coding with practices and
+                    projects.</b
+                  >
+                </p>
+              </a>
+              <p id="small">Learn Code</p>
+              <span id="small">110K views | 1 year ago</span>
+            </div>
+
+            <!-- Options Icon -->
+            <a href="#">
+              <div id="dot">
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="video">
+          <!-- Video Thumbnail -->
+          <div>
+            <a href="./routes/play-video.html">
+              <img id="video" src="./vidTube_img/images/thumbnail1.png" />
+            </a>
+          </div>
+
+          <!-- Video Details Section -->
+          <div class="open">
+            <!-- Channel Icon -->
+            <div>
+              <a href="#">
+                <img src="./vidTube_img/images/Jack.png" />
+              </a>
+            </div>
+
+            <!-- Title, Channel Name, Views -->
+            <div>
+              <a href="./routes/play-video.html">
+                <p>
+                  <b
+                    >To be a good developer learn coding with practices and
+                    projects.</b
+                  >
+                </p>
+              </a>
+              <p id="small">Learn Code</p>
+              <span id="small">110K views | 1 year ago</span>
+            </div>
+
+            <!-- Options Icon -->
+            <a href="#">
+              <div id="dot">
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="video">
+          <!-- Video Thumbnail -->
+          <div>
+            <a href="./routes/play-video.html">
+              <img id="video" src="./vidTube_img/images/thumbnail1.png" />
+            </a>
+          </div>
+
+          <!-- Video Details Section -->
+          <div class="open">
+            <!-- Channel Icon -->
+            <div>
+              <a href="#">
+                <img src="./vidTube_img/images/Jack.png" />
+              </a>
+            </div>
+
+            <!-- Title, Channel Name, Views -->
+            <div>
+              <a href="./routes/play-video.html">
+                <p>
+                  <b
+                    >To be a good developer learn coding with practices and
+                    projects.</b
+                  >
+                </p>
+              </a>
+              <p id="small">Learn Code</p>
+              <span id="small">110K views | 1 year ago</span>
+            </div>
+
+            <!-- Options Icon -->
+            <a href="#">
+              <div id="dot">
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="video">
+          <!-- Video Thumbnail -->
+          <div>
+            <a href="./routes/play-video.html">
+              <img id="video" src="./vidTube_img/images/thumbnail1.png" />
+            </a>
+          </div>
+
+          <!-- Video Details Section -->
+          <div class="open">
+            <!-- Channel Icon -->
+            <div>
+              <a href="#">
+                <img src="./vidTube_img/images/Jack.png" />
+              </a>
+            </div>
+
+            <!-- Title, Channel Name, Views -->
+            <div>
+              <a href="./routes/play-video.html">
+                <p>
+                  <b
+                    >To be a good developer learn coding with practices and
+                    projects.</b
+                  >
+                </p>
+              </a>
+              <p id="small">Learn Code</p>
+              <span id="small">110K views | 1 year ago</span>
+            </div>
+
+            <!-- Options Icon -->
+            <a href="#">
+              <div id="dot">
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="video">
+          <!-- Video Thumbnail -->
+          <div>
+            <a href="./routes/play-video.html">
+              <img id="video" src="./vidTube_img/images/thumbnail1.png" />
+            </a>
+          </div>
+
+          <!-- Video Details Section -->
+          <div class="open">
+            <!-- Channel Icon -->
+            <div>
+              <a href="#">
+                <img src="./vidTube_img/images/Jack.png" />
+              </a>
+            </div>
+
+            <!-- Title, Channel Name, Views -->
+            <div>
+              <a href="./routes/play-video.html">
+                <p>
+                  <b
+                    >To be a good developer learn coding with practices and
+                    projects.</b
+                  >
+                </p>
+              </a>
+              <p id="small">Learn Code</p>
+              <span id="small">110K views | 1 year ago</span>
+            </div>
+
+            <!-- Options Icon -->
+            <a href="#">
+              <div id="dot">
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="video">
+          <!-- Video Thumbnail -->
+          <div>
+            <a href="./routes/play-video.html">
+              <img id="video" src="./vidTube_img/images/thumbnail1.png" />
+            </a>
+          </div>
+
+          <!-- Video Details Section -->
+          <div class="open">
+            <!-- Channel Icon -->
+            <div>
+              <a href="#">
+                <img src="./vidTube_img/images/Jack.png" />
+              </a>
+            </div>
+
+            <!-- Title, Channel Name, Views -->
+            <div>
+              <a href="./routes/play-video.html">
+                <p>
+                  <b
+                    >To be a good developer learn coding with practices and
+                    projects.</b
+                  >
+                </p>
+              </a>
+              <p id="small">Learn Code</p>
+              <span id="small">110K views | 1 year ago</span>
+            </div>
+
+            <!-- Options Icon -->
+            <a href="#">
+              <div id="dot">
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="video">
+          <!-- Video Thumbnail -->
+          <div>
+            <a href="./routes/play-video.html">
+              <img id="video" src="./vidTube_img/images/thumbnail1.png" />
+            </a>
+          </div>
+
+          <!-- Video Details Section -->
+          <div class="open">
+            <!-- Channel Icon -->
+            <div>
+              <a href="#">
+                <img src="./vidTube_img/images/Jack.png" />
+              </a>
+            </div>
+
+            <!-- Title, Channel Name, Views -->
+            <div>
+              <a href="./routes/play-video.html">
+                <p>
+                  <b
+                    >To be a good developer learn coding with practices and
+                    projects.</b
+                  >
+                </p>
+              </a>
+              <p id="small">Learn Code</p>
+              <span id="small">110K views | 1 year ago</span>
+            </div>
+
+            <!-- Options Icon -->
+            <a href="#">
+              <div id="dot">
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
+      <!-- Video Block End -->
+
+      <!-- Shorts Section Heading -->
+      <div class="heading">
+        <a href="#">Shorts</a>
+      </div>
+      <br />
+
+      <!-- Shorts Video Container Start -->
+      <div class="shorts">
+        <div class="shorts-container">
+          <!-- Short Video -->
+          <video
+            controls
+            src="./vidTube_img/images/video (2).mp4"
+            id="short"
+          ></video>
+
+          <!-- Short Video Description -->
+          <div class="short">
+            <a href="#">
+              <p><b>Python is hard 🥵see the actual reality by compar...</b></p>
+              <span>4M views</span>
+            </a>
+            &nbsp;
+            <a href="#">
+              <div>
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="shorts-container">
+          <!-- Short Video -->
+          <video
+            controls
+            src="./vidTube_img/images/video (2).mp4"
+            id="short"
+          ></video>
+
+          <!-- Short Video Description -->
+          <div class="short">
+            <a href="#">
+              <p><b>Python is hard 🥵see the actual reality by compar...</b></p>
+              <span>4M views</span>
+            </a>
+            &nbsp;
+            <a href="#">
+              <div>
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="shorts-container">
+          <!-- Short Video -->
+          <video
+            controls
+            src="./vidTube_img/images/video (2).mp4"
+            id="short"
+          ></video>
+
+          <!-- Short Video Description -->
+          <div class="short">
+            <a href="#">
+              <p><b>Python is hard 🥵see the actual reality by compar...</b></p>
+              <span>4M views</span>
+            </a>
+            &nbsp;
+            <a href="#">
+              <div>
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="shorts-container">
+          <!-- Short Video -->
+          <video
+            controls
+            src="./vidTube_img/images/video (2).mp4"
+            id="short"
+          ></video>
+
+          <!-- Short Video Description -->
+          <div class="short">
+            <a href="#">
+              <p><b>Python is hard 🥵see the actual reality by compar...</b></p>
+              <span>4M views</span>
+            </a>
+            &nbsp;
+            <a href="#">
+              <div>
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="shorts-container">
+          <!-- Short Video -->
+          <video
+            controls
+            src="./vidTube_img/images/video (2).mp4"
+            id="short"
+          ></video>
+
+          <!-- Short Video Description -->
+          <div class="short">
+            <a href="#">
+              <p><b>Python is hard 🥵see the actual reality by compar...</b></p>
+              <span>4M views</span>
+            </a>
+            &nbsp;
+            <a href="#">
+              <div>
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Shorts Video Container End -->
+
       <div class="content">
         <div class="video">
-          <div><a href=""
-            ><img id="video" src="./vidTube_img/images/thumbnail1.png"
-          /></a></div>
+          <!-- Video Thumbnail -->
+          <div>
+            <a href="./routes/play-video.html">
+              <img id="video" src="./vidTube_img/images/thumbnail1.png" />
+            </a>
+          </div>
+
+          <!-- Video Details Section -->
           <div class="open">
-           <div> <a href=""><img src="./vidTube_img/images/Jack.png" /></a> </div>
-           <div> <a href=""
-              ><p>
-                <b
-                  >To be a good dveeloper learn cooding with practices and
-                  projects.</b
-                >
-              </p>
+            <!-- Channel Icon -->
+            <div>
+              <a href="#">
+                <img src="./vidTube_img/images/Jack.png" />
+              </a>
+            </div>
+
+            <!-- Title, Channel Name, Views -->
+            <div>
+              <a href="./routes/play-video.html">
+                <p>
+                  <b
+                    >To be a good developer learn coding with practices and
+                    projects.</b
+                  >
+                </p>
+              </a>
               <p id="small">Learn Code</p>
-              <span id="small">110K views | 1 year ago</span></a>
-             </div>
-             <a href=""><div id="dot"> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
+              <span id="small">110K views | 1 year ago</span>
+            </div>
+
+            <!-- Options Icon -->
+            <a href="#">
+              <div id="dot">
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
           </div>
         </div>
+
         <div class="video">
-            <div><a href=""
-              ><img id="video" src="./vidTube_img/images/thumbnail1.png"
-            /></a></div>
-            <div class="open">
-             <div> <a href=""><img src="./vidTube_img/images/Jack.png" /></a> </div>
-             <div> <a href=""
-                ><p>
-                  <b
-                    >To be a good dveeloper learn cooding with practices and
-                    projects.</b
-                  >
-                </p>
-                <p id="small">Learn Code</p>
-                <span id="small">110K views | 1 year ago</span></a
-              ></div>
-              <a href=""><div id="dot"> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
-            </div>  
+          <!-- Video Thumbnail -->
+          <div>
+            <a href="./routes/play-video.html">
+              <img id="video" src="./vidTube_img/images/thumbnail1.png" />
+            </a>
           </div>
-          <div class="video">
-            <div><a href=""
-              ><img id="video" src="./vidTube_img/images/thumbnail1.png"
-            /></a></div>
-            <div class="open">
-             <div> <a href=""><img src="./vidTube_img/images/Jack.png" /></a> </div>
-             <div> <a href=""
-                ><p>
-                  <b
-                    >To be a good dveeloper learn cooding with practices and
-                    projects.</b
-                  >
-                </p>
-                <p id="small">Learn Code</p>
-                <span id="small">110K views | 1 year ago</span></a
-              ></div>
-              <a href=""><div id="dot"> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
+
+          <!-- Video Details Section -->
+          <div class="open">
+            <!-- Channel Icon -->
+            <div>
+              <a href="#">
+                <img src="./vidTube_img/images/Jack.png" />
+              </a>
             </div>
-          </div>
-          <div class="video">
-            <div><a href=""
-              ><img id="video" src="./vidTube_img/images/thumbnail1.png"
-            /></a></div>
-            <div class="open">
-             <div> <a href=""><img src="./vidTube_img/images/Jack.png" /></a> </div>
-             <div> <a href=""
-                ><p>
+
+            <!-- Title, Channel Name, Views -->
+            <div>
+              <a href="./routes/play-video.html">
+                <p>
                   <b
-                    >To be a good dveeloper learn cooding with practices and
+                    >To be a good developer learn coding with practices and
                     projects.</b
                   >
                 </p>
-                <p id="small">Learn Code</p>
-              <span id="small">110K views | 1 year ago</span></a
-              ></div>
-              <a href=""><div id="dot"> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
+              </a>
+              <p id="small">Learn Code</p>
+              <span id="small">110K views | 1 year ago</span>
             </div>
+
+            <!-- Options Icon -->
+            <a href="#">
+              <div id="dot">
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
           </div>
-          <div class="video">
-            <div><a href=""
-              ><img id="video" src="./vidTube_img/images/thumbnail1.png"
-            /></a></div>
-            <div class="open">
-             <div> <a href=""><img src="./vidTube_img/images/Jack.png" /></a> </div>
-             <div> <a href=""
-                ><p>
+        </div>
+
+        <div class="video">
+          <!-- Video Thumbnail -->
+          <div>
+            <a href="./routes/play-video.html">
+              <img id="video" src="./vidTube_img/images/thumbnail1.png" />
+            </a>
+          </div>
+
+          <!-- Video Details Section -->
+          <div class="open">
+            <!-- Channel Icon -->
+            <div>
+              <a href="#">
+                <img src="./vidTube_img/images/Jack.png" />
+              </a>
+            </div>
+
+            <!-- Title, Channel Name, Views -->
+            <div>
+              <a href="./routes/play-video.html">
+                <p>
                   <b
-                    >To be a good dveeloper learn cooding with practices and
+                    >To be a good developer learn coding with practices and
                     projects.</b
                   >
                 </p>
-                <p id="small">Learn Code</p>
-                <span id="small">110K views | 1 year ago</span></a
-              ></div>
-              <a href=""><div id="dot"> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
+              </a>
+              <p id="small">Learn Code</p>
+              <span id="small">110K views | 1 year ago</span>
             </div>
+
+            <!-- Options Icon -->
+            <a href="#">
+              <div id="dot">
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
           </div>
-          <div class="video">
-            <div><a href=""
-              ><img id="video" src="./vidTube_img/images/thumbnail1.png"
-            /></a></div>
-            <div class="open">
-             <div> <a href=""><img src="./vidTube_img/images/Jack.png" /></a> </div>
-             <div> <a href=""
-                ><p>
+        </div>
+
+        <div class="video">
+          <!-- Video Thumbnail -->
+          <div>
+            <a href="./routes/play-video.html">
+              <img id="video" src="./vidTube_img/images/thumbnail1.png" />
+            </a>
+          </div>
+
+          <!-- Video Details Section -->
+          <div class="open">
+            <!-- Channel Icon -->
+            <div>
+              <a href="#">
+                <img src="./vidTube_img/images/Jack.png" />
+              </a>
+            </div>
+
+            <!-- Title, Channel Name, Views -->
+            <div>
+              <a href="./routes/play-video.html">
+                <p>
                   <b
-                    >To be a good dveeloper learn cooding with practices and
+                    >To be a good developer learn coding with practices and
                     projects.</b
                   >
                 </p>
-                <p id="small">Learn Code</p>
-                <span id="small">110K views | 1 year ago</span></a
-              ></div>
-              <a href=""><div id="dot"> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
+              </a>
+              <p id="small">Learn Code</p>
+              <span id="small">110K views | 1 year ago</span>
             </div>
+
+            <!-- Options Icon -->
+            <a href="#">
+              <div id="dot">
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
           </div>
-          <div class="video">
-            <div><a href=""
-              ><img id="video" src="./vidTube_img/images/thumbnail1.png"
-            /></a></div>
-            <div class="open">
-             <div> <a href=""><img src="./vidTube_img/images/Jack.png" /></a> </div>
-             <div> <a href=""
-                ><p>
+        </div>
+      </div>
+      <div class="heading"><a href="#">Breaking news</a></div>
+      <br />
+
+      <div class="content">
+        <div class="video">
+          <!-- Video Thumbnail -->
+          <div>
+            <a href="./routes/play-video.html">
+              <img id="video" src="./vidTube_img/images/thumbnail1.png" />
+            </a>
+          </div>
+
+          <!-- Video Details Section -->
+          <div class="open">
+            <!-- Channel Icon -->
+            <div>
+              <a href="#">
+                <img src="./vidTube_img/images/Jack.png" />
+              </a>
+            </div>
+
+            <!-- Title, Channel Name, Views -->
+            <div>
+              <a href="./routes/play-video.html">
+                <p>
                   <b
-                    >To be a good dveeloper learn cooding with practices and
+                    >To be a good developer learn coding with practices and
                     projects.</b
                   >
                 </p>
-                <p id="small">Learn Code</p>
-              <span id="small">110K views | 1 year ago</span></a
-              ></div>
-              <a href=""><div id="dot"> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
+              </a>
+              <p id="small">Learn Code</p>
+              <span id="small">110K views | 1 year ago</span>
             </div>
+
+            <!-- Options Icon -->
+            <a href="#">
+              <div id="dot">
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
           </div>
-          <div class="video">
-            <div><a href=""
-              ><img id="video" src="./vidTube_img/images/thumbnail1.png"
-            /></a></div>
-            <div class="open">
-             <div> <a href=""><img src="./vidTube_img/images/Jack.png" /></a> </div>
-             <div> <a href=""
-                ><p>
+        </div>
+
+        <div class="video">
+          <!-- Video Thumbnail -->
+          <div>
+            <a href="./routes/play-video.html">
+              <img id="video" src="./vidTube_img/images/thumbnail1.png" />
+            </a>
+          </div>
+
+          <!-- Video Details Section -->
+          <div class="open">
+            <!-- Channel Icon -->
+            <div>
+              <a href="#">
+                <img src="./vidTube_img/images/Jack.png" />
+              </a>
+            </div>
+
+            <!-- Title, Channel Name, Views -->
+            <div>
+              <a href="./routes/play-video.html">
+                <p>
                   <b
-                    >To be a good dveeloper learn cooding with practices and
+                    >To be a good developer learn coding with practices and
                     projects.</b
                   >
                 </p>
-                <p id="small">Learn Code</p>
-              <span id="small">110K views | 1 year ago</span></a
-              ></div>
-              <a href=""><div id="dot"> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
+              </a>
+              <p id="small">Learn Code</p>
+              <span id="small">110K views | 1 year ago</span>
             </div>
+
+            <!-- Options Icon -->
+            <a href="#">
+              <div id="dot">
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
           </div>
+        </div>
+
+        <div class="video">
+          <!-- Video Thumbnail -->
+          <div>
+            <a href="/routes/play-video.html">
+              <img id="video" src="./vidTube_img/images/thumbnail1.png" />
+            </a>
+          </div>
+
+          <!-- Video Details Section -->
+          <div class="open">
+            <!-- Channel Icon -->
+            <div>
+              <a href="#">
+                <img src="./vidTube_img/images/Jack.png" />
+              </a>
+            </div>
+
+            <!-- Title, Channel Name, Views -->
+            <div>
+              <a href="./routes/play-video.html">
+                <p>
+                  <b
+                    >To be a good developer learn coding with practices and
+                    projects.</b
+                  >
+                </p>
+              </a>
+              <p id="small">Learn Code</p>
+              <span id="small">110K views | 1 year ago</span>
+            </div>
+
+            <!-- Options Icon -->
+            <a href="#">
+              <div id="dot">
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="video">
+          <!-- Video Thumbnail -->
+          <div>
+            <a href="/routes/play-video.html">
+              <img id="video" src="./vidTube_img/images/thumbnail1.png" />
+            </a>
+          </div>
+
+          <!-- Video Details Section -->
+          <div class="open">
+            <!-- Channel Icon -->
+            <div>
+              <a href="#">
+                <img src="./vidTube_img/images/Jack.png" />
+              </a>
+            </div>
+
+            <!-- Title, Channel Name, Views -->
+            <div>
+              <a href="./routes/play-video.html">
+                <p>
+                  <b
+                    >To be a good developer learn coding with practices and
+                    projects.</b
+                  >
+                </p>
+              </a>
+              <p id="small">Learn Code</p>
+              <span id="small">110K views | 1 year ago</span>
+            </div>
+
+            <!-- Options Icon -->
+            <a href="#">
+              <div id="dot">
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Show More Section Start -->
+      <div class="showbar">
+        <hr />
+
+        <!-- Show More Button -->
+        <button id="show_btn">
+          Show more
+          <img
+            class="tab"
+            src="./vidTube_img/images/show-more.png"
+            alt="Show-more-icon"
+          />
+        </button>
+
+        <hr />
+      </div>
+      <!-- Show More Section End -->
+
+      <div class="content">
+        <div class="video">
+          <!-- Video Thumbnail -->
+          <div>
+            <a href="./routes/play-video.html">
+              <img id="video" src="./vidTube_img/images/thumbnail1.png" />
+            </a>
+          </div>
+
+          <!-- Video Details Section -->
+          <div class="open">
+            <!-- Channel Icon -->
+            <div>
+              <a href="#">
+                <img src="./vidTube_img/images/Jack.png" />
+              </a>
+            </div>
+
+            <!-- Title, Channel Name, Views -->
+            <div>
+              <a href="./routes/play-video.html">
+                <p>
+                  <b
+                    >To be a good developer learn coding with practices and
+                    projects.</b
+                  >
+                </p>
+              </a>
+              <p id="small">Learn Code</p>
+              <span id="small">110K views | 1 year ago</span>
+            </div>
+
+            <!-- Options Icon -->
+            <a href="#">
+              <div id="dot">
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="video">
+          <!-- Video Thumbnail -->
+          <div>
+            <a href="./routes/play-video.html">
+              <img id="video" src="./vidTube_img/images/thumbnail1.png" />
+            </a>
+          </div>
+
+          <!-- Video Details Section -->
+          <div class="open">
+            <!-- Channel Icon -->
+            <div>
+              <a href="#">
+                <img src="./vidTube_img/images/Jack.png" />
+              </a>
+            </div>
+
+            <!-- Title, Channel Name, Views -->
+            <div>
+              <a href="./routes/play-video.html">
+                <p>
+                  <b
+                    >To be a good developer learn coding with practices and
+                    projects.</b
+                  >
+                </p>
+              </a>
+              <p id="small">Learn Code</p>
+              <span id="small">110K views | 1 year ago</span>
+            </div>
+
+            <!-- Options Icon -->
+            <a href="#">
+              <div id="dot">
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="video">
+          <!-- Video Thumbnail -->
+          <div>
+            <a href="./routes/play-video.html">
+              <img id="video" src="./vidTube_img/images/thumbnail1.png" />
+            </a>
+          </div>
+
+          <!-- Video Details Section -->
+          <div class="open">
+            <!-- Channel Icon -->
+            <div>
+              <a href="#">
+                <img src="./vidTube_img/images/Jack.png" />
+              </a>
+            </div>
+
+            <!-- Title, Channel Name, Views -->
+            <div>
+              <a href="./routes/play-video.html">
+                <p>
+                  <b
+                    >To be a good developer learn coding with practices and
+                    projects.</b
+                  >
+                </p>
+              </a>
+              <p id="small">Learn Code</p>
+              <span id="small">110K views | 1 year ago</span>
+            </div>
+
+            <!-- Options Icon -->
+            <a href="#">
+              <div id="dot">
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="video">
+          <!-- Video Thumbnail -->
+          <div>
+            <a href="./routes/play-video.html">
+              <img id="video" src="./vidTube_img/images/thumbnail1.png" />
+            </a>
+          </div>
+
+          <!-- Video Details Section -->
+          <div class="open">
+            <!-- Channel Icon -->
+            <div>
+              <a href="#">
+                <img src="./vidTube_img/images/Jack.png" />
+              </a>
+            </div>
+
+            <!-- Title, Channel Name, Views -->
+            <div>
+              <a href="./routes/play-video.html">
+                <p>
+                  <b
+                    >To be a good developer learn coding with practices and
+                    projects.</b
+                  >
+                </p>
+              </a>
+              <p id="small">Learn Code</p>
+              <span id="small">110K views | 1 year ago</span>
+            </div>
+
+            <!-- Options Icon -->
+            <a href="#">
+              <div id="dot">
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="video">
+          <!-- Video Thumbnail -->
+          <div>
+            <a href="./routes/play-video.html">
+              <img id="video" src="./vidTube_img/images/thumbnail1.png" />
+            </a>
+          </div>
+
+          <!-- Video Details Section -->
+          <div class="open">
+            <!-- Channel Icon -->
+            <div>
+              <a href="#">
+                <img src="./vidTube_img/images/Jack.png" />
+              </a>
+            </div>
+
+            <!-- Title, Channel Name, Views -->
+            <div>
+              <a href="./routes/play-video.html">
+                <p>
+                  <b
+                    >To be a good developer learn coding with practices and
+                    projects.</b
+                  >
+                </p>
+              </a>
+              <p id="small">Learn Code</p>
+              <span id="small">110K views | 1 year ago</span>
+            </div>
+
+            <!-- Options Icon -->
+            <a href="#">
+              <div id="dot">
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="video">
+          <!-- Video Thumbnail -->
+          <div>
+            <a href="./routes/play-video.html">
+              <img id="video" src="./vidTube_img/images/thumbnail1.png" />
+            </a>
+          </div>
+
+          <!-- Video Details Section -->
+          <div class="open">
+            <!-- Channel Icon -->
+            <div>
+              <a href="#">
+                <img src="./vidTube_img/images/Jack.png" />
+              </a>
+            </div>
+
+            <!-- Title, Channel Name, Views -->
+            <div>
+              <a href="./routes/play-video.html">
+                <p>
+                  <b
+                    >To be a good developer learn coding with practices and
+                    projects.</b
+                  >
+                </p>
+              </a>
+              <p id="small">Learn Code</p>
+              <span id="small">110K views | 1 year ago</span>
+            </div>
+
+            <!-- Options Icon -->
+            <a href="#">
+              <div id="dot">
+                <img id="three" src="./vidTube_img/images/dots.png" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="heading" ><a href="">Shorts</a></div> <br>
-   <div class="shorts">
-      <div class="shorts-container">
-        <video controls  src="./vidTube_img/images/video (2).mp4" id="short"> 
-        </video>
-        <div class="short"> <a href=""
-          ><p>
-            <b>Python is hard 🥵see the actual relaity by compar...</b>
-          </p>  <span>4M views</span>
-        </a> <a href=""><div> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
-         </div>
-      </div>
-      <div class="shorts-container">
-        <video controls  src="./vidTube_img/images/video (2).mp4" id="short"></video>
-        <div class="short"> <a href=""
-          ><p>
-            <b
-              >Python is hard 🥵see the actual relaity by compar...</b
-            >
-          </p>  <span>4M views</span>
-        </a> <a href=""><div> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
-         </div>
-      </div>
-      <div class="shorts-container">
-        <video controls src="./vidTube_img/images/video (2).mp4" id="short"></video>
-        <div class="short"> <a href=""
-          ><p>
-            <b
-              >Python is hard 🥵see the actual relaity by compar...</b
-            >
-          </p>  <span>4M views</span>
-        </a> <a href=""><div> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
-         </div>
-      </div>
-      <div class="shorts-container">
-        <video controls src="./vidTube_img/images/video (2).mp4" id="short"></video>
-        <div class="short"> <a href=""
-          ><p>
-            <b
-              >Python is hard 🥵see the actual relaity by compar...</b
-            >
-          </p>  <span>4M views</span>
-        </a> <a href=""><div> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
-         </div>
-      </div>
-      <div class="shorts-container">
-        <video controls src="./vidTube_img/images/video (2).mp4" id="short"></video>
-        <div class="short"> <a href=""
-          ><p>
-            <b
-              >Python is hard 🥵see the actual relaity by compar...</b
-            >
-          </p>  <span>4M views</span>
-        </a> <a href=""><div> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
-         </div>
-      </div>
-    </div>
-    <div class="content" style="margin-top: 40px;">
-      <div class="video">
-        <div><a href=""
-          ><img id="video" src="./vidTube_img/images/thumbnail1.png"
-        /></a></div>
-        <div class="open">
-         <div> <a href=""><img src="./vidTube_img/images/Jack.png" /></a> </div>
-         <div> <a href=""
-            ><p>
-              <b
-                >To be a good dveeloper learn cooding with practices and
-                projects.</b
-              >
-            </p>
-            <p id="small">Learn Code</p>
-            <span id="small">110K views | 1 year ago</span></a>
-           </div>
-           <a href=""><div id="dot"> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
-        </div>
-      </div>
-      <div class="video">
-        <div><a href=""
-          ><img id="video" src="./vidTube_img/images/thumbnail1.png"
-        /></a></div>
-        <div class="open">
-         <div> <a href=""><img src="./vidTube_img/images/Jack.png" /></a> </div>
-         <div> <a href=""
-            ><p>
-              <b
-                >To be a good dveeloper learn cooding with practices and
-                projects.</b
-              >
-            </p>
-            <p id="small">Learn Code</p>
-            <span id="small">110K views | 1 year ago</span></a>
-           </div>
-           <a href=""><div id="dot"> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
-        </div>
-      </div>
-      <div class="video">
-        <div><a href=""
-          ><img id="video" src="./vidTube_img/images/thumbnail1.png"
-        /></a></div>
-        <div class="open">
-         <div> <a href=""><img src="./vidTube_img/images/Jack.png" /></a> </div>
-         <div> <a href=""
-            ><p>
-              <b
-                >To be a good dveeloper learn cooding with practices and
-                projects.</b
-              >
-            </p>
-            <p id="small">Learn Code</p>
-            <span id="small">110K views | 1 year ago</span></a>
-           </div>
-       <a href=""><div id="dot"> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
-        </div>
-      </div>
-      <div class="video">
-        <div><a href=""
-          ><img id="video" src="./vidTube_img/images/thumbnail1.png"
-        /></a></div>
-        <div class="open">
-         <div> <a href=""><img src="./vidTube_img/images/Jack.png" /></a> </div>
-         <div> <a href=""
-            ><p>
-              <b
-                >To be a good dveeloper learn cooding with practices and
-                projects.</b
-              >
-            </p>
-            <p id="small">Learn Code</p>
-            <span id="small">110K views | 1 year ago</span></a>
-           </div>
-           <a href=""><div id="dot"> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
-        </div>
-      </div>
-      </div>
-    <div class="heading" ><a href="">Breaking news</a></div> <br>
-    <div class="content" style="margin-top: 10px;">
-      <div class="video">
-        <div><a href=""
-          ><img id="video" src="./vidTube_img/images/thumbnail1.png"
-        /></a></div>
-        <div class="open">
-         <div> <a href=""><img src="./vidTube_img/images/Jack.png" /></a> </div>
-         <div> <a href=""
-            ><p>
-              <b
-                >To be a good dveeloper learn cooding with practices and
-                projects.</b
-              >
-            </p>
-            <p id="small">Learn Code</p>
-            <span id="small">110K views | 1 year ago</span></a>
-           </div>
-           <a href=""><div id="dot"> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
-        </div>
-      </div>
-      <div class="video">
-        <div><a href=""
-          ><img id="video" src="./vidTube_img/images/thumbnail1.png"
-        /></a></div>
-        <div class="open">
-         <div> <a href=""><img src="./vidTube_img/images/Jack.png" /></a> </div>
-         <div> <a href=""
-            ><p>
-              <b
-                >To be a good dveeloper learn cooding with practices and
-                projects.</b
-              >
-            </p>
-            <p id="small">Learn Code</p>
-            <span id="small">110K views | 1 year ago</span></a>
-           </div>
-       <a href=""><div id="dot"> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
-        </div>
-      </div>
-      <div class="video">
-        <div><a href=""
-          ><img id="video" src="./vidTube_img/images/thumbnail1.png"
-        /></a></div>
-        <div class="open">
-         <div> <a href=""><img src="./vidTube_img/images/Jack.png" /></a> </div>
-         <div> <a href=""
-            ><p>
-              <b
-                >To be a good dveeloper learn cooding with practices and
-                projects.</b
-              >
-            </p>
-            <p id="small">Learn Code</p>
-            <span id="small">110K views | 1 year ago</span></a>
-           </div>
-           <a href=""><div id="dot"> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
-        </div>
-      </div>
-      </div>
-      <div class="showbar"><hr>
-        <button id="show_btn">Show more <img id="tab" src="./vidTube_img/images/show-more.png" alt=""></button> <hr>
-        </div>
-        <div class="content" style="margin-top: 30px;">
-          <div class="video">
-            <div><a href=""
-              ><img id="video" src="./vidTube_img/images/thumbnail1.png"
-            /></a></div>
-            <div class="open">
-             <div> <a href=""><img src="./vidTube_img/images/Jack.png" /></a> </div>
-             <div> <a href=""
-                ><p>
-                  <b
-                    >To be a good dveeloper learn cooding with practices and
-                    projects.</b
-                  >
-                </p>
-                <p id="small">Learn Code</p>
-                <span id="small">110K views | 1 year ago</span></a>
-               </div>
-               <a href=""><div id="dot"> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
-            </div>
-          </div>
-          <div class="video">
-            <div><a href=""
-              ><img id="video" src="./vidTube_img/images/thumbnail1.png"
-            /></a></div>
-            <div class="open">
-             <div> <a href=""><img src="./vidTube_img/images/Jack.png" /></a> </div>
-             <div> <a href=""
-                ><p>
-                  <b
-                    >To be a good dveeloper learn cooding with practices and
-                    projects.</b
-                  >
-                </p>
-                <p id="small">Learn Code</p>
-                <span id="small">110K views | 1 year ago</span></a>
-               </div>
-           <a href=""><div id="dot"> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
-            </div>
-          </div>
-          <div class="video">
-            <div><a href=""
-              ><img id="video" src="./vidTube_img/images/thumbnail1.png"
-            /></a></div>
-            <div class="open">
-             <div> <a href=""><img src="./vidTube_img/images/Jack.png" /></a> </div>
-             <div> <a href=""
-                ><p>
-                  <b
-                    >To be a good dveeloper learn cooding with practices and
-                    projects.</b
-                  >
-                </p>
-                <p id="small">Learn Code</p>
-                <span id="small">110K views | 1 year ago</span></a>
-               </div>
-               <a href=""><div id="dot"> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
-            </div>
-          </div>
-          <div class="video">
-            <div><a href=""
-              ><img id="video" src="./vidTube_img/images/thumbnail1.png"
-            /></a></div>
-            <div class="open">
-             <div> <a href=""><img src="./vidTube_img/images/Jack.png" /></a> </div>
-             <div> <a href=""
-                ><p>
-                  <b
-                    >To be a good dveeloper learn cooding with practices and
-                    projects.</b
-                  >
-                </p>
-                <p id="small">Learn Code</p>
-                <span id="small">110K views | 1 year ago</span></a>
-               </div>
-               <a href=""><div id="dot"> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
-            </div>
-          </div> <div class="video">
-            <div><a href=""
-              ><img id="video" src="./vidTube_img/images/thumbnail1.png"
-            /></a></div>
-            <div class="open">
-             <div> <a href=""><img src="./vidTube_img/images/Jack.png" /></a> </div>
-             <div> <a href=""
-                ><p>
-                  <b
-                    >To be a good dveeloper learn cooding with practices and
-                    projects.</b
-                  >
-                </p>
-                <p id="small">Learn Code</p>
-                <span id="small">110K views | 1 year ago</span></a>
-               </div>
-               <a href=""><div id="dot"> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
-            </div>
-          </div> <div class="video">
-            <div><a href=""
-              ><img id="video" src="./vidTube_img/images/thumbnail1.png"
-            /></a></div>
-            <div class="open">
-             <div> <a href=""><img src="./vidTube_img/images/Jack.png" /></a> </div>
-             <div> <a href=""
-                ><p>
-                  <b
-                    >To be a good dveeloper learn cooding with practices and
-                    projects.</b
-                  >
-                </p>
-                <p id="small">Learn Code</p>
-                <span id="small">110K views | 1 year ago</span></a>
-               </div>
-               <a href=""><div id="dot"> <img id="three" src="./vidTube_img/images/dots.png" /></div></a>
-            </div>
-          </div>
-          </div>
-    </div>
-    <script src="./JS/script.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
