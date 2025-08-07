@@ -1,3 +1,9 @@
+// 👉 Preloader hide on page load
+var loader = document.getElementById("preloader");
+window.addEventListener("load", () => {
+  loader.style.display = "none";
+});
+
 // -------------------- Theme Icons Setup --------------------
 let icon1 = document.getElementById("icon1"); // Theme toggle icon
 let icon2 = document.getElementById("menu");

@@ -30,6 +30,16 @@ body {
   height: 500dvh;
   width: 100%;
 }
+
+/* ========== PRELOADER ========== */
+#preloader {
+  background: black url(vidTube_img/images/Spinner.gif) no-repeat center center;
+  background-size: 8%;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
 a {
   color: var(--secondary-color);
   text-decoration: none;
