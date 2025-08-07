@@ -33,7 +33,7 @@ body {
 
 /* ========== PRELOADER ========== */
 #preloader {
-  background: black url(vidTube_img/images/Spinner.gif) no-repeat center center;
+  background: whitesmoke url(../vidTube_img/images/Spinner.gif) no-repeat center center;
   background-size: 8%;
   position: fixed;
   width: 100vw;
