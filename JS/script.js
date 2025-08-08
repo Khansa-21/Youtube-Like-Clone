@@ -55,32 +55,32 @@ function updateIcons(isDarkMode) {
   };
 
   // Apply updated sources
-  if (icon2) icon2.src = `../vidTube_img/images/${icons.icon2}`;
-  if (icon1) icon1.src = `../vidTube_img/images/${icons.icon1}`;
-  if (icon3) icon3.src = `../vidTube_img/images/${icons.icon3}`;
-  if (icon4) icon4.src = `../vidTube_img/images/${icons.icon4}`;
-  if (icon5) icon5.src = `../vidTube_img/images/${icons.icon5}`;
-  if (icon6) icon6.src = `../vidTube_img/images/${icons.icon6}`;
-  if (icon8) icon8.src = `../vidTube_img/images/${icons.icon8}`;
-  if (icon9) icon9.src = `../vidTube_img/images/${icons.icon9}`;
-  if (icon10) icon10.src = `../vidTube_img/images/${icons.icon10}`;
-  if (icon11) icon11.src = `../vidTube_img/images/${icons.icon11}`;
-  if (icon12) icon12.src = `../vidTube_img/images/${icons.icon12}`;
-  if (icon13) icon13.src = `../vidTube_img/images/${icons.icon13}`;
-  if (icon14) icon14.src = `../vidTube_img/images/${icons.icon14}`;
-  if (icon15) icon15.src = `../vidTube_img/images/${icons.icon15}`;
-  if (icon16) icon16.src = `../vidTube_img/images/${icons.icon16}`;
-  if (icon17) icon17.src = `../vidTube_img/images/${icons.icon17}`;
-  if (icon18) icon18.src = `../vidTube_img/images/${icons.icon18}`;
-  if (icon19) icon19.src = `../vidTube_img/images/${icons.icon19}`;
-  if (icon20) icon20.src = `../vidTube_img/images/${icons.icon20}`;
-  if (icon21) icon21.src = `../vidTube_img/images/${icons.icon21}`;
-  if (icon22) icon22.src = `../vidTube_img/images/${icons.icon22}`;
+  if (icon2) icon2.src = `vidTube_img/images/${icons.icon2}`;
+  if (icon1) icon1.src = `vidTube_img/images/${icons.icon1}`;
+  if (icon3) icon3.src = `vidTube_img/images/${icons.icon3}`;
+  if (icon4) icon4.src = `vidTube_img/images/${icons.icon4}`;
+  if (icon5) icon5.src = `vidTube_img/images/${icons.icon5}`;
+  if (icon6) icon6.src = `vidTube_img/images/${icons.icon6}`;
+  if (icon8) icon8.src = `vidTube_img/images/${icons.icon8}`;
+  if (icon9) icon9.src = `vidTube_img/images/${icons.icon9}`;
+  if (icon10) icon10.src = `vidTube_img/images/${icons.icon10}`;
+  if (icon11) icon11.src = `vidTube_img/images/${icons.icon11}`;
+  if (icon12) icon12.src = `vidTube_img/images/${icons.icon12}`;
+  if (icon13) icon13.src = `vidTube_img/images/${icons.icon13}`;
+  if (icon14) icon14.src = `vidTube_img/images/${icons.icon14}`;
+  if (icon15) icon15.src = `vidTube_img/images/${icons.icon15}`;
+  if (icon16) icon16.src = `vidTube_img/images/${icons.icon16}`;
+  if (icon17) icon17.src = `vidTube_img/images/${icons.icon17}`;
+  if (icon18) icon18.src = `vidTube_img/images/${icons.icon18}`;
+  if (icon19) icon19.src = `vidTube_img/images/${icons.icon19}`;
+  if (icon20) icon20.src = `vidTube_img/images/${icons.icon20}`;
+  if (icon21) icon21.src = `vidTube_img/images/${icons.icon21}`;
+  if (icon22) icon22.src = `vidTube_img/images/${icons.icon22}`;
 
   icon7.forEach((element) => {
     element.src = isDarkMode
-      ? "../vidTube_img/images/dots (1).png"
-      : "../vidTube_img/images/dots.png";
+      ? "vidTube_img/images/dots (1).png"
+      : "vidTube_img/images/dots.png";
   });
 }
 
