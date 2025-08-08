@@ -33,7 +33,8 @@ body {
 
 /* ========== PRELOADER ========== */
 #preloader {
-  background: whitesmoke url(../vidTube_img/images/Spinner.gif) no-repeat center center;
+  background: white url(../vidTube_img/images/Spinner.gif) no-repeat center
+    center;
   background-size: 8%;
   position: fixed;
   width: 100vw;
@@ -695,19 +696,36 @@ Next page styling
   align-items: flex-start;
   color: var(--secondary-color);
 }
+/* =========================
+   LEFT COLUMN STYLING
+   ========================= */
 .left-col {
-  flex-basis: 69%;
+  flex-basis: 69%; /* Left section width */
 }
+
 .left-col video {
-  height: 450px;
+  height: 450px; /* Fixed video height */
 }
+
+/* =========================
+   TAGS
+   ========================= */
 .tags a {
   font-size: 13px;
-  color: blue;
+  color: blue; /* Tag link color */
 }
+
+/* =========================
+   VIDEO INFO
+   ========================= */
 .info {
-  margin-top: 10px;
+  margin-top: 10px; /* Space above video info */
 }
+
+/* =========================
+   ACTION BUTTONS
+   (Bell, Like, Share, Download, Description)
+   ========================= */
 .bell,
 .like,
 .share,
@@ -718,29 +736,44 @@ Next page styling
   background-color: var(--fifth-color);
   color: var(--secondary-color);
 }
+
+/* Bell icon button */
 .bell {
   margin-left: 20px;
   cursor: pointer;
 }
+
+/* Like button */
 .like {
   margin-left: 120px;
 }
+
+/* Share button */
 .share {
   margin-left: 20px;
   width: 90px;
 }
+
+/* Download button */
 .download {
   margin-left: 20px;
   width: 120px;
 }
+
+/* Video description */
 .description {
   margin-top: 20px;
   line-height: 20px;
 }
+
+/* =========================
+   COMMENTS SECTION
+   ========================= */
 .comments {
   margin-top: 20px;
   width: 300px;
 }
+
 #comment {
   width: 100%;
   background-color: var(--primary-color);
@@ -750,17 +783,27 @@ Next page styling
   color: var(--secondary-color);
   padding-left: 10px;
 }
+
+/* Comment title/heading */
 .comments p {
   font-weight: bold;
 }
+
+/* =========================
+   RIGHT COLUMN STYLING
+   ========================= */
 .right-col {
   flex-basis: 30%;
   margin-left: 20px;
 }
+
+/* Suggested video container */
 .suggestion {
   margin-bottom: 10px;
   align-items: flex-start;
 }
+
+/* Video info inside suggestions */
 .video-info {
   width: 250px;
   margin-top: 10px;
@@ -869,33 +912,58 @@ Next page styling
     padding: 0;
     width: 100%;
   }
+  /* =========================
+   SUGGESTION SECTION (Mobile view adjustments)
+   ========================= */
   .suggestion {
-    flex-direction: column;
+    flex-direction: column; /* Stack suggestion items vertically */
   }
+
   .suggestion #video {
-    width: 100%;
-    height: 250px;
+    width: 100%; /* Full width video */
+    height: 250px; /* Fixed height for suggestion videos */
   }
+
+  /* =========================
+   LEFT COLUMN VIDEO (Mobile view)
+   ========================= */
   .left-col video {
-    height: 220px;
-    width: 100%;
+    height: 220px; /* Smaller video height for mobile */
+    width: 100%; /* Full width video */
   }
+
+  /* =========================
+   RIGHT COLUMN (Mobile view)
+   ========================= */
   .right-col {
-    margin-left: 0;
-    margin-top: 20px;
-    flex-basis: 100%;
+    margin-left: 0; /* Remove left margin */
+    margin-top: 20px; /* Add space above */
+    flex-basis: 100%; /* Full width column */
   }
+
+  /* =========================
+   INFO SECTION (Mobile view)
+   ========================= */
   .info {
-    flex-wrap: wrap;
-    gap: 5px;
+    flex-wrap: wrap; /* Allow info items to wrap onto new lines */
+    gap: 5px; /* Space between items */
   }
+
+  /* =========================
+   LIKE BUTTON (Mobile view)
+   ========================= */
   .like {
-    margin-left: 10px;
+    margin-left: 10px; /* Reduce left margin for smaller screens */
   }
 }
 
 /* Tablet responsiveness */
+
+/* =========================
+   TABLET VIEW (601px - 900px)
+   ========================= */
 @media (min-width: 601px) and (max-width: 900px) {
+  /* Hide unnecessary elements for tablet view */
   .sidebar,
   #more,
   #notification,
@@ -905,52 +973,78 @@ Next page styling
   .comment-section {
     display: none;
   }
+
+  /* Logo adjustments */
   .logo_nav #logo {
     width: 80px;
     margin-right: 20px;
   }
+
+  /* Search bar styling */
   .search {
     width: 300px;
     height: 30px;
   }
+
+  /* Sidebar width reduced */
   .sidebar {
     width: fit-content;
   }
+
+  /* Make main, banner first section, and videos full width */
   .main,
   .banner .first,
   .video {
     width: 100%;
   }
+
+  /* First section spacing */
   .first {
     margin-right: 10px;
   }
+
+  /* Video size adjustments */
   #video {
     width: 310px;
     height: 200px;
   }
+
+  /* Text inside .open section */
   .open p {
     width: 230px;
   }
+
+  /* Shorts grid layout */
   .shorts {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  /* Main container column layout */
   .main_container {
     flex-direction: column;
     width: 100%;
     margin: 0;
     padding: 0;
   }
+
+  /* Left and right columns take full width */
   .left-col,
   .right-col {
     flex-basis: 100%;
   }
+
+  /* Suggestions section spacing */
   .suggestion {
     margin-top: 20px;
   }
+
+  /* Suggested video size */
   .suggestion #video {
     width: 330px;
     height: 200px;
   }
+
+  /* Video info width */
   .video-info {
     width: 330px;
   }
