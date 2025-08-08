@@ -118,8 +118,9 @@ let short = document.querySelector(".shorts");
 
 // ✅ Identify if current page is home
 const isHomePage =
-  window.location.pathname === "/" ||
-  window.location.pathname.endsWith("index.html");
+  window.location.pathname.endsWith("/") ||
+  window.location.pathname.endsWith("/index.html") ||
+  window.location.pathname.includes("Youtube-like-clone/index.html");
 
 // ✅ Handle menu click
 icon2.onclick = function () {
